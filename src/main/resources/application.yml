@@ -1,0 +1,3 @@
+logging:
+  level:
+    nuclear.bot.parsingprocessor: TRACE
