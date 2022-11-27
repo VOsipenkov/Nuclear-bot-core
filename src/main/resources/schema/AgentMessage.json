@@ -1,0 +1,21 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentMessage",
+  "type": "object",
+  "properties": {
+    "parsingAgentName": {
+      "type": "string",
+      "description": "The name of parsing agent"
+    },
+    "messageDateTime": {
+      "type": "string",
+      "description": "When message was generated"
+    },
+    "message": {
+      "description": "Message from agent",
+      "type": "string",
+      "minimum": 1
+    }
+  }
+}

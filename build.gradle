@@ -48,8 +48,8 @@ jsonSchema2Pojo {
     generateBuilders = false
     usePrimitives = false
     source = files("src/main/resources/schema")
-    targetDirectory = file("${project.buildDir}/generated-sources/js2p")
-    targetPackage = 'main.java.nuclear.bot.parsingprocessor'
+    targetDirectory = file("src/main/java")
+    targetPackage = 'nuclear.bot.parsingprocessor.dto'
 }
 
 
