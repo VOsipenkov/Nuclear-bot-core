@@ -1,3 +1,5 @@
 logging:
   level:
     nuclear.bot.parsingprocessor: TRACE
+notification:
+  level: INFO
