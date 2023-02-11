@@ -4,7 +4,7 @@
   "title": "AgentMessage",
   "type": "object",
   "properties": {
-    "parsingAgentName": {
+    "parserAgentName": {
       "type": "string",
       "description": "The name of parsing agent"
     },

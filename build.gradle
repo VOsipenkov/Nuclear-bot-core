@@ -45,11 +45,11 @@ tasks.named('test') {
 }
 
 jsonSchema2Pojo {
-    generateBuilders = false
+    generateBuilders = true
     usePrimitives = false
     source = files("src/main/resources/schema")
     targetDirectory = file("src/main/java")
-    targetPackage = 'nuclear.bot.parsingprocessor.dto'
+    targetPackage = 'nuclear.bot.core.dto'
 }
 
 

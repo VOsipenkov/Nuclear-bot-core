@@ -1,8 +1,8 @@
-# Nuclear-bot-parsing-processor
-Processor for parsing clients with json schemas and dto
+# Nuclear-bot-core
+dto's and processing logic. Listen kafka PARSING.EVENT kafka topic
 
 
-# Messaging
+# Model
 Use AgentMessage for send to this service messages like this
 
 {
@@ -17,3 +17,6 @@ Use AgentMessage for send to this service messages like this
     }
   }
 }
+
+# ( For build model from json scheme use command  gradle generateJsonSchema2Pojo )
+ 

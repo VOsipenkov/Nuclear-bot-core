@@ -1,10 +1,10 @@
-package nuclear.bot.parsingprocessor.service.impl;
+package nuclear.bot.core.service.impl;
 
 import com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceImpl;
 import lombok.extern.slf4j.Slf4j;
-import nuclear.bot.parsingprocessor.dto.AgentMessage;
-import nuclear.bot.parsingprocessor.service.AlertLevel;
-import nuclear.bot.parsingprocessor.service.MessageRpcService;
+import nuclear.bot.core.dto.AgentMessage;
+import nuclear.bot.core.service.AlertLevel;
+import nuclear.bot.core.service.MessageRpcService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
