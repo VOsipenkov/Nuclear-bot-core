@@ -1,5 +1,5 @@
 package nuclear.bot.core.service;
 
-public enum AlertLevel {
+public enum AlertLevelParams {
     INFO, ALERT
 }
