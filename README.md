@@ -14,5 +14,5 @@ Use AgentMessage for send to this service messages like this
 # ( For build model from json scheme use command  gradle generateJsonSchema2Pojo )
 
 kubectl port-forward kafka-broker-c856f4d9b-tcrcp 9092
-docker build -t vladi15151/nuclear-bot-core:0.6 .   
+docker build -t vladi15151/nuclear-bot-core:0.6 .  
 docker push vladi15151/nuclear-bot-core:0.6   
