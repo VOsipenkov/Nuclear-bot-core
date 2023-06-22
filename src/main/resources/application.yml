@@ -8,9 +8,9 @@ notification:
 spring:
   kafka:
     template:
-      default-topic: PARSER.EVENT
+      default-topic: parser-event
     consumer:
-      bootstrap-servers: kafka-service:9092
+      bootstrap-servers: my-cluster-kafka-bootstrap.kafka.svc.cluster.local:9092
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: nuclear.bot.core.config.MessageAdapter
       group-id: core
