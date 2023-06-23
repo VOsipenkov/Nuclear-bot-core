@@ -14,6 +14,6 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: nuclear.bot.core.config.MessageAdapter
       group-id: core
-    properties:
-      key-class: java.lang.String
-      value-class: nuclear.bot.core.dto.AgentMessage
+      properties:
+        key-class: java.lang.String
+        value-class: nuclear.bot.core.dto.AgentMessage
