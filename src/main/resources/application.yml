@@ -17,3 +17,16 @@ spring:
       properties:
         key-class: java.lang.String
         value-class: nuclear.bot.core.dto.AgentMessage
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://postgresdb.postgresql.svc.cluster.local:5432/nuclear?useSSL=false
+    username: pgadmin
+    password: pgadmin
+    driver-class-name: org.postgresql.Driver
