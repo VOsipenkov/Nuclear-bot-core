@@ -30,3 +30,6 @@ spring:
     username: pgadmin
     password: pgadmin
     driver-class-name: org.postgresql.Driver
+
+application:
+  name: defaultName
