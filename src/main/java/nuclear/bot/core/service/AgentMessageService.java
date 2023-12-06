@@ -3,8 +3,7 @@ package nuclear.bot.core.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import nuclear.bot.core.dto.AgentMessage;
-import nuclear.bot.core.repository.Client;
-import nuclear.bot.core.repository.ClientRepository;
+import nuclear.bot.core.repository.AgentMessageRepository;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
@@ -12,14 +11,13 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class AgentMessageService {
-    private final ClientRepository userRepository;
+    private final AgentMessageRepository agentMessageRepository;
+    private final AgentMessageToEntityMapper mapper;
 
     @KafkaListener(topics = "#{topic}")
     public void read(AgentMessage agentMessage) {
         log.info("Read message {}", agentMessage);
-        Client user = new Client();
-        user.setAge("23");
-        user.setName("Vlad");
-        userRepository.save(user);
+        var agentMessageEntity = mapper.map(agentMessage);
+        agentMessageRepository.save(agentMessageEntity);
     }
 }

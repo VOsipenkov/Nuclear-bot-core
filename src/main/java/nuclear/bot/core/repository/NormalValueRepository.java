@@ -3,6 +3,8 @@ package nuclear.bot.core.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.UUID;
+
 @Repository
-public interface ClientRepository extends JpaRepository<Client, String> {
+public interface NormalValueRepository extends JpaRepository<NormalValueEntity, UUID> {
 }
