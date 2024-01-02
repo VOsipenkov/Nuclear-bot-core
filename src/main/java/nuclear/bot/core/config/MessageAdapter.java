@@ -51,7 +51,7 @@ public class MessageAdapter<T> implements Serializer<T>, Deserializer<T> {
         try {
             return (T) objectMapper.readValue(new String(bytes, StandardCharsets.UTF_8), clazz);
         } catch (Exception e) {
-            log.error("Can't deserialize object");
+            log.error("Can't deserialize object {}, class {}", new String(bytes, StandardCharsets.UTF_8), clazz);
             e.printStackTrace();
         }
         return null;

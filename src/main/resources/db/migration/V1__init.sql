@@ -1,7 +1,7 @@
--- CREATE TABLE accounts
--- (
---     user_id  serial PRIMARY KEY,
---     username VARCHAR(50) UNIQUE  NOT NULL,
---     password VARCHAR(50)         NOT NULL,
---     email    VARCHAR(255) UNIQUE NOT NULL
--- );
+CREATE TABLE AGENT_MESSAGE
+(
+    id              uuid PRIMARY KEY,
+    parserAgentName VARCHAR(50)              NOT NULL,
+    messageDateTime TIMESTAMP WITH TIME ZONE NOT NULL,
+    message         VARCHAR(255)             NOT NULL
+);
