@@ -15,5 +15,5 @@ Use AgentMessage for send to this service messages like this
 
 kubectl port-forward kafka-broker-c856f4d9b-tcrcp 9092A
 ./gradlew build
-docker build -t vladi15151/nuclear-bot-core:1.1.22 .
-docker push vladi15151/nuclear-bot-core:1.1.22
+docker build -t vladi15151/nuclear-bot-core:1.3.00 .
+docker push vladi15151/nuclear-bot-core:1.3.00
