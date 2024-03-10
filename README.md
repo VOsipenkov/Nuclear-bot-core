@@ -18,5 +18,5 @@ kubectl port-forward 5555:30599 -n postgresql
 
 ./gradlew build
 docker login
-docker build -t vladi15151/nuclear-bot-core:1.3.01 .
-docker push vladi15151/nuclear-bot-core:1.3.01
+docker build -t vladi15151/nuclear-bot-core:1.4.00 .
+docker push vladi15151/nuclear-bot-core:1.4.00
