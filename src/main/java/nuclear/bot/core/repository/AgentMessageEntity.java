@@ -1,5 +1,6 @@
 package nuclear.bot.core.repository;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
@@ -13,9 +14,11 @@ import java.util.UUID;
 public class AgentMessageEntity {
     @Id
     @GeneratedValue
+    @Getter
     private UUID id;
 
     @Setter
+    @Getter
     @Column(name="parseragentname")
     private String parserAgentName;
 

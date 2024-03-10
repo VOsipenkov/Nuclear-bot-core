@@ -41,6 +41,6 @@ spring:
     locations: classpath:db/migration
     driver-class-name: org.postgresql.Driver
 
-
 application:
   name: defaultName
+  scheduleTime: 60000
