@@ -16,7 +16,13 @@ Use AgentMessage for send to this service messages like this
 kubectl port-forward kafka-broker-c856f4d9b-tcrcp 9092
 kubectl port-forward 5555:30599 -n postgresql
 
-./gradlew build
+# -----------------------------------------
+# Build version: 1.5.2
+
 docker login
-docker build -t vladi15151/nuclear-bot-core:1.5.1 .
-docker push vladi15151/nuclear-bot-core:1.5.1
+./gradlew build
+# Build k8s
+docker build -f Dockerfile-k8s -t  vladi15151/nuclear-bot-core:1.5.2 .
+# Build render
+docker build -f Dockerfile-render -t vladi15151/nuclear-bot-core:1.5.2 .
+docker push vladi15151/nuclear-bot-core:1.5.2

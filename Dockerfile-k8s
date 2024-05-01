@@ -5,4 +5,4 @@ EXPOSE 8080
 #RUN apt-get install -y gcc
 #RUN apt-get install -y curl
 #ENTRYPOINT ["java","$JAVA_OPTS", "-jar", "core.jar"]
-ENTRYPOINT java $JAVA_OPTS -jar core.jar
+ENTRYPOINT ["java", "-Dspring.profiles.active=k8s",  "-jar", "core.jar"]
