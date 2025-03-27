@@ -24,4 +24,9 @@ public class NormalValueEntity {
     @Getter
     @Column(name="normalvalue")
     private String normalValue;
+
+    @Setter
+    @Getter
+    @Column(name="parseragenturl")
+    private String parserAgentUrl;
 }
